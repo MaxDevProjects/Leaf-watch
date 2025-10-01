@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leaf-watch"
+version = "0.1.0"
+description = "WebWatcher backend and tooling"
+readme = "Readme.md"
+requires-python = ">=3.10"
+authors = [{name = "Maxime G. Martin"}]
+dependencies = [
+    "fastapi>=0.111",
+    "uvicorn[standard]>=0.23",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "sqlalchemy>=2.0",
+    "aiosqlite>=0.19",
+    "alembic>=1.13",
+    "pydantic-settings>=2.2",
+    "pyyaml>=6.0",
+    "feedparser>=6.0",
+    "apscheduler>=3.10",
+    "typer>=0.12"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.21",
+    "httpx[cli]>=0.27"
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-q"
+testpaths = ["apps/backend/tests"]
+asyncio_mode = "auto"

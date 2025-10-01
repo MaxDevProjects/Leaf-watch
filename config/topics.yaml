@@ -1,0 +1,17 @@
+topics:
+  - name: tech
+    keywords: ["ai", "intelligence artificielle", "saas", "startup"]
+    threshold: 1
+    weight: 1
+  - name: startup
+    keywords: ["levée", "seed", "series", "startup", "financement"]
+    threshold: 1
+    weight: 1
+  - name: impact
+    keywords: ["climat", "transition", "écologie", "impact"]
+    threshold: 1
+    weight: 1
+  - name: design
+    keywords: ["design", "ux", "ui", "figma"]
+    threshold: 1
+    weight: 1
