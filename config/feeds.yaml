@@ -1,0 +1,7 @@
+feeds:
+  - name: Hacker News
+    url: https://hnrss.org/frontpage
+    topics: [tech]
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+    topics: [tech, startup]
